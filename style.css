@@ -4,6 +4,7 @@
     padding: 0;
     text-decoration: none;
     font-family: "Sora";
+   
     
 }
 
@@ -12,12 +13,32 @@ html {
 }
 
 body {
-    color: #000;
+    margin: 0;
+}
+#home {
+    background-color: #000;
+    width: 100;
+    height: 100vh;
+    color: #fff; 
 }
 
-#home {
-    width: 100%;
-    height: 100vh;
+#home h1 {
+    padding-top: 200px;
+    font-family: "Sora";
+    font-size: 100px;
+    font-weight: 600;
+    margin-bottom: 40PX;
+    margin-left: 80px;
+}
+
+#home h2 {
+    font-size:47px;
+    font-weight: 300;
+    margin-left: 80px;
+}
+
+.container {
+    background-color: #000;
 }
 
 .hamburguer {
@@ -67,12 +88,6 @@ header {
     
 }
 
-.banner {
-    position: absolute;
-    top: 30%;
-    left: 15%;
-}
-
 .banner h1 {
     font-size: 100px;
     font-weight: 600;
@@ -84,7 +99,7 @@ header {
     font-weight: 300;
 }
 .sidebar {
-    width: 20rem;
+    width: 19.8rem;
     height: 100vh;
     background-color: #fff;
     position: fixed;
@@ -93,6 +108,11 @@ header {
     transition: all 1s;
     z-index: 90;
     font-size: 10px;
+}
+
+.sidebar h1 {
+    color: #000;
+    margin-left: 10px;
 }
   
 .show-menu .sidebar {
@@ -124,30 +144,6 @@ header {
 .menu-link:hover {
     color: #6a3093;
 }
-
-footer {
-    width: 100%;
-    height: 5rem;
-    background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 70px;
-    margin-right: 40px;
-}
-
-footer .integrantes {
-    width: 60%;
-    display: flex;
-}
-footer img {
-    width: 40%;
-}
-
-footer li {
-    list-style: none;
-}
-
 .bannerWC {
     width: 100%;
     height: 100vh;
@@ -175,6 +171,87 @@ section {
     margin-left: 20px;
 }
 
+.contextoSlide header {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.contextoSlide .header {
+    height: 0.1px;
+   
+}
+.contextoSlide .slider {
+    flex: 1;
+    overflow: hidden;
+    
+}
+
+.contextoSlide .slider--width {
+    height: 100%;
+    display: flex;
+    transition: all ease 0.3s;
+}
+
+.contextoSlide .slider--item {
+    background-position: center;
+    background-size: cover;
+    width: 94.5vw;
+}
+
+.contextoSlide .slider--controls {
+    position: absolute;
+    z-index: 99;
+    width: 77vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 15px;
+    margin-left: 10px;
+    transition: all 0.4s;
+    font-size: 1.7em;
+    
+}
+
+.contextoSlide .slider--control {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.contextoSlide .slider--control:hover {
+    transform: scale(1.5);
+}
+
+.contexto {
+    display: flex;
+}
+
+.contextoSlide {
+    margin-top: 15px;
+    width: 78%;
+    height: 90vh;
+    justify-content: left;
+    background-color: #fff;
+}
+
+.contextoAside {
+    width: 22%;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+}
+
+.contextoAside h1 {
+    margin: 20px;
+    font-family: "Sora";
+}
+
+.contextoAside p {
+    margin: 20px;
+}
 header {
     margin: 0;
     display: flex;
@@ -215,7 +292,6 @@ header {
     margin-left: 10px;
     transition: all 0.4s;
     font-size: 1.7em;
-    
 }
 
 .slider--control {
@@ -228,4 +304,41 @@ header {
 
 .slider--control:hover {
     transform: scale(1.5);
+}
+.subcultura {
+    display: flex;
+}
+.subculturaSlide {
+    background-color: green;
+    height: 100vh;
+    width: 78%;
+}
+.subculturaAside {
+    background-color: plum;
+    height: 100vh;
+    width: 22%;
+}
+
+footer {
+    width: 100%;
+    height: 5rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    margin-right: 40px;
+}
+
+footer .integrantes {
+    width: 60%;
+    display: flex;
+}
+footer img {
+    width: 40%;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 70px;
 }

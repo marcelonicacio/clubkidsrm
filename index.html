@@ -5,9 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7636c50115.js" crossorigin="anonymous"></script>
     <title>Club Kids</title>
 </head>
 <body>
+
+    <div>
+        <a href="#sec-1">
+          <div class="scroll-down1"><i class="far fa-window-minimize"></i></div>
+        </a>
+      </div>
 
     <div class="container">
         <div class="hamburguer">
@@ -16,14 +23,13 @@
         <div class="line" id="line3"></div>
         
     </div>
-
-    <header id="home">
-        <div class="banner">
-            <h1>CLUB KIDS:</h1>
-            <h2>INFLUÊNCIA NA MODA</h2>
-        </div>
-    </header>
-    <aside class="sidebar">
+    <div id="home">
+            <div class="bannerIndex" id="sec-0">
+                <h1>CLUB KIDS:</h1>
+                <h2>INFLUÊNCIA NA MODA</h2>
+            </div>
+    </div> 
+        <aside class="sidebar">
             <ul class="menu">
                 <h1>1. CLUB KIDS</h1>
                 <li class="menu-item"><a href="contexto.html" class="menu-link">Contexto económico e social anos 80</a></li>
@@ -33,7 +39,54 @@
                 <li class="menu-item"><a href="modavscont.html" class="menu-link">Moda da época VS contemporânea</a></li>
                 <li class="menu-item"><a href="integrantes.html" class="menu-link">Integrantes do movimento</a></li>
             </ul>
-    </aside>
+        </aside>
+        <div class="contexto" id="sec-1">
+            
+            <div class="contextoSlide">
+                <header>
+                    <div class="header"></div>
+                    <div class="slider">
+                        <div class="slider--controls">
+                            <div class="slider--control" onclick="goPrev()"><i class="fas fa-chevron-left"></i></div>
+                            <div class="slider--control" onclick="goNext()"><i class="fas fa-chevron-right"></i></div>
+                        </div>
+                        <div class="slider--width">
+                            <div class="slider--item" style="background-image: url(img/1.jpg);"></div>
+                            <div class="slider--item" style="background-image: url(img/10.jpg);"></div>
+                            <div class="slider--item" style="background-image: url(img/13.jpg);"></div>
+                            <div class="slider--item" style="background-image: url(img/8.jpg);"></div>
+                        </div>
+                    </div>
+                </header>
+            </div> 
+            <aside class="contextoAside">
+                <h1>exemplo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consequatur cupiditate nostrum accusantium aut eius ducimus. Asperiores, eligendi suscipit? Fugiat sequi neque odit unde, excepturi voluptate minima vero dolore repellendus.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis iste ratione qui laudantium reiciendis, voluptas quas, totam placeat doloremque velit neque blanditiis explicabo dolore perspiciatis nihil rem tenetur eveniet cumque.</p>
+                <div>
+                    <div>
+                        <a href="#sec-0">
+                          <div class="scroll-down3"><i class="far fa-window-minimize"></i></div>
+                        </a>
+                      </div>
+                    <a href="#sec-2">
+                      <div class="scroll-down2"><i class="far fa-window-minimize"></i></div>
+                    </a>
+                  </div>
+            </aside>
+        </div>
+        
+        <div class="subcultura" id="sec-2">
+            <aside class="subculturaAside">
+                <h1>exemplo</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora beatae dicta voluptates laborum, sit culpa quasi cupiditate? Illum odio impedit libero nostrum non facere, odit laboriosam totam vitae, nobis cumque.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo suscipit provident quos et sed? Dolorum, autem blanditiis consectetur saepe, ex quod earum dolore, itaque voluptatibus magnam esse nobis architecto quibusdam.</p>
+            </aside>
+            <div class="subculturaSlide">
+            </div>  
+        </div>
     <footer>
         <div class="integrantes">
             <ul>
@@ -47,4 +100,5 @@
 </body>
 <script src="hamburguer.js"></script>
 <script src="script.js"></script>
+<script src="main.js"></script>
 </html>
