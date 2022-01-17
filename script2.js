@@ -1,11 +1,11 @@
-let totalSlides = document.querySelectorAll('.item1').length;
+let totalSlides = document.querySelectorAll('.item2').length;
 let currentSlide = 0;
 
-document.querySelector('.width1').style.width = `calc(100vw * ${totalSlides})`;
-document.querySelector('.slider--controls').style.height =
-`${document.querySelector('.slider1').clientHeight}px`;
+document.querySelector('.width2').style.width = `calc(100vw * ${totalSlides})`;
+document.querySelector('.controls2').style.height =
+`${document.querySelector('.slider2').clientHeight}px`;
 
-function goPrev() {
+function goPrev2() {
     currentSlide--;
     if (currentSlide < 0) {
         currentSlide = totalSlides -1;
@@ -13,7 +13,7 @@ function goPrev() {
     updateMargin();
 }
 
-function goNext() {
+function goNext2() {
     currentSlide++;
     if (currentSlide > (totalSlides - 1)) {
         currentSlide = 0;
@@ -23,7 +23,7 @@ function goNext() {
 
 function updateMargin() {
     let newMargin = (currentSlide * document.body.clientWidth);
-    document.querySelector('.width1').style.marginLeft =
+    document.querySelector('.width2').style.marginLeft =
     `-${newMargin}px`;
 }
 

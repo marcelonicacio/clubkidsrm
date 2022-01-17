@@ -1,0 +1,36 @@
+*{
+    margin: 0; padding: 0;
+}
+
+.subculturaSlide {
+    
+    
+    overflow: hidden;
+    height: 90vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.subculturaSlide ul {
+    list-style: none;
+    width: 300vw;
+    height: 300vh;
+    list-style: none;
+    display: flex;
+
+}
+
+.subculturaSlide li {
+    position: relative;
+    animation: slide 18s infinite ease-out;
+}
+
+@keyframes slide {
+    0%{left: 0px;}
+    20%{left: 0px;}
+    30% {left: -1000px;}
+    50%{left: -1000px;}
+    60%{left: -2000px;}
+    90%{left: -2000px;}
+    100%{left: 0px;}
+}
